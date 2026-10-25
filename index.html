@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Igor Nunes</title>
+  <meta name="description" content="Igor Nunes: crio ferramentas para problemas do meu dia a dia. Projetos, sobre mim e contato.">
+  <meta name="theme-color" content="#16161e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1b26'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%239ece6a'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="janela" aria-label="Terminal do portfólio de Igor Nunes">
+    <header class="barra-titulo">
+      <span class="titulo" id="titulo">igor@portfolio: ~</span>
+      <span class="botoes" aria-hidden="true"><i></i><i></i><i></i></span>
+    </header>
+
+    <nav class="atalhos" aria-label="Seções">
+      <button type="button" data-cmd="cd ~ && ls">~</button>
+      <button type="button" data-cmd="cd ~/sobre && cat sobre.md">sobre/</button>
+      <button type="button" data-cmd="cd ~/projetos && ls">projetos/</button>
+      <button type="button" data-cmd="cd ~/contato && cat contato.txt">contato/</button>
+    </nav>
+
+    <section class="tela" id="tela">
+      <div id="saida" aria-live="polite"></div>
+
+      <form class="linha-comando" id="form" autocomplete="off">
+        <label for="entrada" class="prompt" id="prompt"></label>
+        <input id="entrada" type="text" spellcheck="false" autocapitalize="off" autocorrect="off"
+               enterkeyhint="send" aria-label="Digite um comando (help para ajuda)">
+      </form>
+    </section>
+
+    <noscript>
+      <div class="sem-js">
+        <h1>Igor Nunes</h1>
+        <p>Sou de Porto Alegre/RS e crio software por conta própria: observo o meu dia a dia, percebo onde uma ferramenta poderia ajudar e coloco a mão na massa até a ideia sair do papel.</p>
+        <h2>Projetos</h2>
+        <p><a href="https://github.com/igornunesfontoura/overcam">overcam</a>: toca um clipe de vídeo e áudio por cima da webcam durante chamadas no Linux.</p>
+        <p><a href="https://github.com/igornunesfontoura/SongLog">SongLog</a>: aplicação desktop para avaliar álbuns faixa por faixa.</p>
+        <h2>Contato</h2>
+        <p><a href="mailto:igorfontoura0702@gmail.com">igorfontoura0702@gmail.com</a> · <a href="https://github.com/igornunesfontoura">GitHub</a></p>
+      </div>
+    </noscript>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
