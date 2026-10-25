@@ -18,7 +18,7 @@ const raiz = pasta("", {
       <p>Faço o curso Técnico em Desenvolvimento de Sistemas no Senac, onde me conectei com o Java. Antes disso, aprendi Python, JavaScript, HTML e CSS em cursos e vídeos. Também gosto de criar jogos.</p>
       <p>Meu objetivo é criar projetos que as pessoas realmente usem e ter liberdade para continuar criando.</p>
       <h2>Tecnologias</h2>
-      <p><span class="tag">Java</span> · <span class="tag">Python</span> · <span class="tag">JavaScript</span> · <span class="tag">HTML</span> · <span class="tag">CSS</span></p>
+      <p><span class="tag">Java</span> · <span class="tag">Kotlin</span> · <span class="tag">Python</span> · <span class="tag">JavaScript</span> · <span class="tag">HTML</span> · <span class="tag">CSS</span></p>
     `),
   }),
   projetos: pasta("o que eu criei", {
@@ -41,6 +41,17 @@ const raiz = pasta("", {
         <ul>
           <li><span class="chave">stack</span>Java, Swing, MySQL, JDBC</li>
           <li><span class="chave">código</span>${link(`${GITHUB}/SongLog`, "github.com/igornunesfontoura/SongLog")}</li>
+        </ul>
+      `),
+    }),
+    "controle-remoto": pasta("teclado e touchpad Bluetooth no celular", {
+      "README.md": arquivo(`
+        <h1>Controle Remoto</h1>
+        <p>App Android que transforma o celular em teclado, touchpad e controle de mídia Bluetooth para o computador. O computador enxerga o celular como um teclado e mouse comuns, então não precisa instalar nada do outro lado.</p>
+        <p>Nasceu porque eu assisto filmes no notebook ligado à TV e cansei de levantar do sofá para colocar em tela cheia ou aumentar o volume.</p>
+        <ul>
+          <li><span class="chave">stack</span>Kotlin, Jetpack Compose, Bluetooth HID</li>
+          <li><span class="chave">código</span>${link(`${GITHUB}/ControleRemoto`, "github.com/igornunesfontoura/ControleRemoto")}</li>
         </ul>
       `),
     }),
