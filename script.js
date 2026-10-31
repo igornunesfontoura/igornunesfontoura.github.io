@@ -22,6 +22,19 @@ const raiz = pasta("", {
     `),
   }),
   projetos: pasta("o que eu criei", {
+    "your-finances": pasta("finanças pessoais, privadas e sem internet", {
+      "README.md": arquivo(`
+        <h1>Your Finances</h1>
+        <p>App Android de finanças pessoais: entradas, saídas fixas e flexíveis, cartões de crédito, parcelamentos, recorrências e dinheiro guardado em caixinhas. A tela principal mostra o número mais importante do mês: quanto ainda posso gastar.</p>
+        <p>Os dados ficam só no aparelho, num banco criptografado. O app não usa internet, não tem conta, anúncios nem telemetria.</p>
+        <p>Nasceu porque eu queria um app de finanças com tudo o que eu precisava, sem entregar meus dados a ninguém.</p>
+        <ul>
+          <li><span class="chave">stack</span>Kotlin, Jetpack Compose, Room, SQLCipher</li>
+          <li><span class="chave">código</span>${link(`${GITHUB}/YourFinances`, "github.com/igornunesfontoura/YourFinances")}</li>
+          <li><span class="chave">download</span>${link(`${GITHUB}/YourFinances/releases/latest`, "APK na última release")}</li>
+        </ul>
+      `),
+    }),
     overcam: pasta("clipes por cima da webcam em chamadas no Linux", {
       "README.md": arquivo(`
         <h1>overcam</h1>
